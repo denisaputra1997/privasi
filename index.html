@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>program sederhana</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+
+	<script>
+		
+		inputName();
+		function inputName(){
+			var Name = prompt("Masukan nama kamu");
+			if (Name == "dita") {
+			document.write("<p>Halo "+ Name +"</p>");
+
+			}else{
+				alert('Kamu siapa?');
+				window.location.replace("index.html");
+			}
+
+	}
+
+	</script>
+
+	<button type="button" onclick="pacar()">lanjut</button>
+	<script>
+		function pacar(){
+			var Pacar = prompt("Masukan nama lengkap pacar kamu");
+			if (Pacar == "deni saputra") {
+				alert('Kamu Beneran Dita aku :)');
+				window.location(hariIni());
+
+			}else{
+				alert('Kamu bukan dita ya? :(');
+				window.location.replace("index.html");
+			}
+		}
+
+		function hariIni(){
+			var Hari = prompt("Hari apakah hari ini?");
+			if (Hari == "ulang tahun aku") {
+				alert('Ihhhh, Iya bener, hari ini hari ulang tahun kamu.. :)');
+				window.location(ucapan());
+			}else{
+				alert('hari ini hari ulang tahun kamu sayang :)');
+				window.location(ucapan());
+			}
+		}
+
+		var url = "https://youtu.be/0GJkqQbtsnA";
+		function ucapan(){
+			alert('Selamat Ulang tahun ya sayang, semoga panjang umur, sehat selalu, semoga keinginan kamu untuk ngeringanin capeknya papa terkabul. Semangat juga kerjanya ya, kalo kamu cape kabarin aku biar aku bantuin, Maaf yaaa kalo aku belum bisa ngasih kado yang bagus buat kamu, tapi jangan kwatir kado dari aku nyusul kok nanti tenang aja.. hehehe :)');
+			alert('masih ada loh lanjutannya, klik ok deh!');
+			window.location.href = url;
+		}
+
+	</script>
+
+
+
+</body>
+</html>
